@@ -1,0 +1,23 @@
+
+# version: '3.8'
+
+services:
+  mysql1:
+    image: mysql:latest
+    container_name: UsuarioAlquiler
+    environment:
+      #MYSQL_ROOT_PASSWORD: ""              # Nombre del usuario adicional
+      MYSQL_ALLOW_EMPTY_PASSWORD: yes
+      MYSQL_DATABASE: "UsuarioAlquiler"   # Nombre de la base de datos inicial
+    ports:
+      - "3306:3306"  # Exponer el puerto 3306 al host
+
+  mysql2:
+    image: mysql:latest
+    container_name: MonopatinParada
+    environment:
+      #MYSQL_ROOT_PASSWORD: ""              # Nombre del usuario adicional
+      MYSQL_ALLOW_EMPTY_PASSWORD: yes
+      MYSQL_DATABASE: "MonopatinParada"   # Nombre de la base de datos inicial
+    ports:
+      - "3307:3306"  # Exponer el puerto 3306 al host

@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: MicroUsuarioAlquiler
+  datasource:
+    url: jdbc:mysql://localhost:3306/UsuarioAlquiler?createDatabaseIfNotExist=true
+    username: root
+    password: ""
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    database: mysql
+#Hibernate Configuration
+
+
+#Variable de entorno
+server.port: 8081
